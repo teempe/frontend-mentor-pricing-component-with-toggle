@@ -32,7 +32,6 @@ body {
 
     // center content on page
     display: grid;
-    justify-content: center;
-    align-content: start;
+    place-content: center;
     min-height: 100vh;
 }

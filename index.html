@@ -13,33 +13,44 @@
         <title>Frontend Mentor | Pricing component with toggle</title>
     </head>
     <body>
-
-        Our Pricing
-        Annually
-        Monthly
-
-        Basic
-        &dollar;19.99
-        &dollar;199.99
-        500 GB Storage
-        2 Users Allowed
-        Send up to 3 GB
-        Learn More
-
-        Professional
-        &dollar;24.99
-        &dollar;249.99
-        1 TB Storage
-        5 Users Allowed
-        Send up to 10 GB
-        Learn More
-
-        Master
-        &dollar;39.99
-        &dollar;399.99
-        2 TB Storage
-        10 Users Allowed
-        Send up to 20 GB
-        Learn More
+        <main>
+            <!-- h1 for semantics reason only -->
+            <h1 class="visually-hidden">Pricing component</h1>
+            <article class="pricing">
+                <h2>Our Pricing</h2>
+                <!-- 
+                TODO: toggle comonent
+                    Annually
+                Monthly -->
+                
+                <section class="pricing-card">
+                    <h3 class="pricing-card__plan">Basic</h3>
+                    <p class="pricing-card__price">&dollar;19.99</p>
+                    <!-- &dollar;199.99 -->
+                    <ul class="pricing-card__plan-features">
+                        <li class="pricing-card__plan-feature">500 GB Storage</li>
+                        <li class="pricing-card__plan-feature">2 Users Allowed</li>
+                        <li class="pricing-card__plan-feature">Send up to 3 GB</li>
+                    </ul>
+                    <a href="#" class="pricing-card__btn">Learn More</a>
+                </section>
+                
+                <!-- Professional
+                &dollar;24.99
+                &dollar;249.99
+                1 TB Storage
+                5 Users Allowed
+                Send up to 10 GB
+                Learn More
+                
+                Master
+                &dollar;39.99
+                &dollar;399.99
+                2 TB Storage
+                10 Users Allowed
+                Send up to 20 GB
+                Learn More -->
+            </article>
+        </main>
     </body>
 </html>
