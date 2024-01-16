@@ -1,0 +1,59 @@
+@import "price";
+@import "features";
+@import "btn";
+
+
+.pricing-card {
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    padding: 3.1rem 2.9rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2rem;
+    align-items: center;
+
+    box-shadow: 0rem 2rem 4rem 0rem var(--color-card-shadow); 
+
+    &__plan {
+        margin-bottom: -0.8rem;
+        font-size: 1.8rem;
+    }
+
+    &__plan-features {
+        --border-color: var(--color-grayish-blue);
+    }
+
+    &__btn {
+        --btn-font-color: var(--color-white);
+        --btn-bg-color: var(--color-linear-gradient);
+        --btn-border-color: none;
+
+        &:hover, &:focus {
+            --btn-font-color: var(--color-light-grayish-blue);
+            --btn-bg-color: transparent;
+            --btn-border-color: var(--color-light-grayish-blue);
+        }
+    }
+
+    &--recomended {
+        background: var(--color-linear-gradient);
+        color: var(--color-white);
+
+        & .pricing-card__plan-features {
+            --border-color: var(--color-white);
+        }
+
+        & .pricing-card__btn {
+            --btn-font-color: var(--color-light-grayish-blue);
+            --btn-bg-color: var(--color-white);
+            --btn-border-color: none;
+
+            &:hover, &:focus {
+                --btn-font-color: var(--color-white);
+                --btn-bg-color: transparent;
+                --btn-border-color: var(--color-white);
+            }
+        }
+    }
+}
