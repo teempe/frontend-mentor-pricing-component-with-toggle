@@ -1,0 +1,38 @@
+:root {
+    --color-very-light-grayish-blue: #F7F7FE;
+    --color-light-grayish-blue: #6D72DE;
+    --color-grayish-blue: #6E728E;
+    --color-dark-grayish-blue: #4A4D60;
+    --color-white: #FFF;
+    --color-linear-gradient: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+
+    --ff-body: 'Montserrat', sans-serif;
+    --fw-bold: 700;
+}
+
+$bp-desktop: 90em; // 1440px
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+
+    // center content on page
+    display: grid;
+    justify-content: center;
+    align-content: start;
+    min-height: 100vh;
+}
