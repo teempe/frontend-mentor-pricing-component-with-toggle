@@ -56,4 +56,20 @@
             }
         }
     }
+
+    @media only screen and (min-width: $bp-desktop) {
+        padding: 3.1rem;
+
+        &:first-child {
+            border-radius: 1rem 0rem 0rem 1rem;
+        }
+
+        &:last-child {
+            border-radius: 0rem 1rem 1rem 0rem;
+        }
+    
+        &--recomended {
+            padding: 5.45rem 3.1rem;
+        }
+    }
 }

@@ -17,4 +17,25 @@
         flex-direction: column;
         row-gap: 3.25rem;
     }
+
+    @media only screen and (min-width: $bp-desktop) {
+        width: 144rem;
+        background: 
+            top 0rem right 0rem / auto auto no-repeat url('../images/bg-top.svg'),
+            bottom 0rem left 0rem / auto auto no-repeat url('../images/bg-bottom.svg'),
+            var(--color-very-light-grayish-blue);
+        padding: 7.1rem 19.5rem 10.35rem;
+
+        &__cards {
+            flex-direction: row;
+            row-gap: 0rem;
+            column-gap: 0rem;
+            justify-content: center;
+            align-items: center;
+
+            & > * {
+                flex: 0 0 35rem;
+            }
+        }
+    }
 }
