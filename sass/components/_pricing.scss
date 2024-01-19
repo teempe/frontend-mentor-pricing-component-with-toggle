@@ -12,6 +12,10 @@
         margin-bottom: 4rem;
     }
 
+    &__btn {
+        margin-bottom: 8rem;
+    }
+
     &__cards {
         display: flex;
         flex-direction: column;
@@ -25,6 +29,10 @@
             bottom 0rem left 0rem / auto auto no-repeat url('../images/bg-bottom.svg'),
             var(--color-very-light-grayish-blue);
         padding: 7.1rem 19.5rem 10.35rem;
+        
+        &__btn {
+            margin-bottom: 6.45rem;
+        }
 
         &__cards {
             flex-direction: row;
