@@ -3,6 +3,14 @@
     align-items: center;
     column-gap: 0.75rem;
 
+    &--monthly {
+        display: flex;
+    }
+
+    &--annually {
+        display: none;
+    }
+
     &__currency {
         font-size: 4rem;
         line-height: normal;
