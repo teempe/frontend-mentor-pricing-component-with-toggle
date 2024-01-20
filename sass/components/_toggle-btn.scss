@@ -44,7 +44,7 @@
         transform: translateX(-100%);
     }
 
-    &:hover &__slider {
+    &:hover, &:focus &__slider {
         opacity: 0.5;
     }
 }

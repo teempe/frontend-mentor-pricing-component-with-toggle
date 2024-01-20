@@ -1,6 +1,9 @@
 const checkbox = document.querySelector('.switch__checkbox');
+const slider = document.querySelector('.switch__slider');
+
 
 checkbox.addEventListener('change', handleSwitch);
+slider.addEventListener('keydown', handleSwichWithKeyboard);
 
 function setPricingMonthly() {
     document.querySelectorAll('.price--monthly').forEach(element => element.style.display='flex');
@@ -17,6 +20,17 @@ function handleSwitch() {
         setPricingAnnually()
     } else {
         setPricingMonthly()
+    }
+    
+    slider.setAttribute('aria-checked', checkbox.checked);
+}
+
+function handleSwichWithKeyboard(event) {
+    // Enter or Space
+    if (event.keyCode === 13 || event.keyCode === 32) {
+        checkbox.checked = !checkbox.checked
+
+        handleSwitch();
     }
 }
 
