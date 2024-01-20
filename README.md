@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot-monthly.jpg)
-![](./screenshot-annually.jpg)
+![](./screenshot-monthly.png)
+![](./screenshot-annually.png)
 
 ### Links
 
